@@ -1,0 +1,62 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins",sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+:root{
+  --yellow : #e47a24;
+}
+
+@font-face {
+  font-family: 'MyFont1';
+  src: url('/fonts/Evgeny - Regular Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav{
+  height: 17vh;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.nav-links{
+}
+
+.tag-line{
+  font-family: 'MyFont1';
+  color: var(--yellow);
+  text-align: center;
+  position: relative;
+  font-size: 7rem;
+  padding-top: 11rem;
+}
+
+.main-page-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image covers the entire area */
+  object-position: center;
+  z-index: -1;
+}
