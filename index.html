@@ -13,33 +13,41 @@
 
 <body>
   <nav id="header">
-    <div class="logo">Next Date</div>
-    <ul class="nav-links">
-      <li><a href="#main-page">Home</a></li>
-      <li><a href="#seacrh-page">Search</a></li>
-      <li><a href="#contact-page">Contact</a></li>
-    </ul>
+    <div class="logo">Your Next Date</div>
+    <div class="nav-btns">
+      <button onclick="scrollToSection('main-page')">Home</button>
+      <button onclick="scrollToSection('search-page')">Search</button>
+      <button onclick="scrollToSection('contact-page')">Contact</button>
+    </div>
   </nav>
 
   <section id="mainPage">
     <div class="main-page">
       <img class="main-page-bg" src="assets/cafe.jpg">
       <h1 class="tag-line">Your Next Date</h1>
+      <div class="search">
+        <button  class="search-cafes-btn" onclick="findArea()">Find cafes near me</button>
+      </div>
     </div>
   </section>
 
-  <footer>
+  <section id="findCafes">
+    <div id="map">Hello</div>
+  </section>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_JS_API_KEY&callback=initMap" async defer></script>
+  
+  <!--<footer>
     <nav id="footer">
-      <div class="Next Date"></div>
-      <ul class="nav-links">
+      <ul class="details">
         <li>CopyRights</li>
         <li>Email</li>
         <li>Instagram</li>
         </ul>
     </nav>
-  </footer>
+  </footer>  -->
 
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
